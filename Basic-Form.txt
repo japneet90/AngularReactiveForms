@@ -1,0 +1,85 @@
+<!-- Main Toolbar of an App -->
+<mat-toolbar color="accent">
+    <span>Reactive Forms</span>
+    <span class="demo-toolbar"></span>
+</mat-toolbar>
+
+<mat-card>
+    <!-- Title of an Card -->
+    <mat-card-title>
+        Angular Material Component With Angular 5
+    </mat-card-title>
+
+    <mat-card-content>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input matInput placeholder="First Name">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input matInput placeholder="Last Name">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <mat-form-field class="demo-full-width">
+                            <textarea matInput placeholder="Address" matTextareaAutosize matAutosizeMinRows="2" matAutosizeMaxRows="5"></textarea>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <mat-form-field class="demo-full-width">
+                            <input matInput [matDatepicker]="picker" placeholder="Date of birth">
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker touchUi="true" #picker></mat-datepicker>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Gender</span><br><br>
+                        <mat-radio-group>
+                            <mat-radio-button value="1">Male</mat-radio-button>
+                            <mat-radio-button value="2">Female</mat-radio-button>
+                        </mat-radio-group>
+                    </td>
+                    <td><br>
+                        <mat-form-field>
+                            <mat-select placeholder="Select Blog" [(value)]="selected">
+                                <mat-option>-- Select Any --</mat-option>
+                                <mat-option value="1">C#Corner</mat-option>
+                                <mat-option value="2">C#Corner</mat-option>
+                                <mat-option value="3">C#Corner</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <mat-form-field class="demo-full-width">
+                            <input matInput placeholder="Email" [errorStateMatcher]="matcher">
+                            <!-- <mat-hint>Errors appear here</mat-hint> -->
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="content-center">
+                        <button mat-raised-button color="accent">Submit</button>
+                        <button mat-raised-button color="accent">Clear</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </mat-card-content>
+</mat-card>
