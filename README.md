@@ -22,7 +22,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
         </mat-error>
     </form>
 ```
-#### 2. Add Submit button for actions(It will onFormSubmit method in component)
+#### 2. Add Submit button for actions(It will call onFormSubmit method in component)
 ```
     <button mat-raised-button (click)="onFormSubmit(myReactiveForm.value)">         Submit 
     </button>
