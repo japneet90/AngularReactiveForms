@@ -1,5 +1,5 @@
 <mat-toolbar>
-    <div style="width: 100%;text-align: center">Reactive Forms And Filters</div>
+    <div style="width: 100%;text-align: center">Reactive Form Validations And Filters</div>
     <button mat-raised-button (click)="showForm = !showForm">
         <span *ngIf="showForm"> Show Filters </span>
         <span *ngIf="!showForm"> Show Reactive Form </span>
@@ -27,7 +27,7 @@
 </mat-card>
 <mat-card *ngIf="showForm">
     <mat-card-title>
-        Reactive Forms with Angular Material
+        Reactive Form Validations with Angular Material
     </mat-card-title>
     <mat-card-content>
         <form [formGroup]="myReactiveForm">
